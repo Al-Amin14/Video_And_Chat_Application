@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useSocket } from '../contex/socketProvider';
 import { useNavigate } from 'react-router-dom';
+import peer from '../service/peer';
 
 function Lobby() {
     const [email, setEmail] = useState('');
